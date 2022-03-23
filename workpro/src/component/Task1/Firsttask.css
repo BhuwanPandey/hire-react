@@ -1,0 +1,153 @@
+.taskcontainer{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+.sideNavbar{
+flex:1;
+background-color: black;
+padding:30px 10px;
+}
+
+
+.sideNavbar a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+    color: white;
+    margin:13px 0;
+    width:100%;
+    background-color: grey;
+    padding:3px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sideNavbar a:hover{
+    background-color: white;
+    color:black;
+}
+
+
+.subtaskcontainer{
+    width:75%;
+    margin:0 auto;
+    flex:3;
+    
+}
+
+.simpleSlider h1{
+    text-align: center;
+}
+.sub_simpleSlider,.btnloading,.progressbarContainer{
+    width:50%;
+    margin:auto;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 25px;
+height: 25px;
+background: #04AA6D;
+cursor: pointer;
+}
+.result{
+    margin:20px auto;
+    width: 50%;
+    line-height:30px;
+    background-color: black;
+    color:white;
+}
+.result span{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CSS for loading button  */
+.btnloading,.progressbarContainer{
+    margin-top:50px;
+}
+
+.btnloading button,.progressbtn{
+    background-color: #04AA6D;
+    border: none; 
+    color: white; 
+    padding: 12px 16px; 
+    font-size: 16px;
+    border-radius:5px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.loader{
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 15px;
+    animation: spin 2s linear infinite;
+
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+
+  /* css for progressbar section */
+
+
+
+.progressbar-border{
+    height:20px;
+    width:100%;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+
+.progressbar{
+    height:20px;
+    width:50%;
+    background-color: grey;
+}
+.progressbar-active{
+    height:20px;
+    width:50%;
+    background-color: grey;
+    animation: straight 5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes straight {
+    50% { width:50% }
+    70% { width:70% }
+    90% { width:90% }
+    100% { width:100% }
+}
