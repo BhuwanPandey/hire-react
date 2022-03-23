@@ -1,0 +1,30 @@
+
+.issueContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.issuesubcontainer{
+    flex:1px
+}
+.labelnamecontainer{
+    flex:1px
+}
+.issuesubcontainer h1{
+    text-align: center;
+}
+
+.urlLink{
+    margin:5px;
+    padding:3px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.labeldata{
+    margin:5px;
+    border:1px solid black;
+    list-style: none;
+    font-size: 23px;
+}
